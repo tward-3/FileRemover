@@ -15,7 +15,7 @@ foreach ($file in $allFiles) {
     $filename = $file.Name.Substring(0, 9)
     Write-Host "Checking filename $($filename)"
    
-    # Check if the filename is in the list of filenames extracted from the text file
+    # Check if the filename contains an ID the list of IDs extracted from the text file
     if ($filenamesToKeep -contains $filename) {
         Write-Host "Filename $($filename) found in the text file."
     } else {
